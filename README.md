@@ -6,13 +6,13 @@ Writted with PHP & CSS & MariaDB
 For now indisponible.
 
 # Requied Packages
-- An Apache2 server
+- [An Apache2 server](https://httpd.apache.org)
 
 - [PHP, the last version](https://php.net)
 
-- MariaDB/MySQL
+- [MariaDB](https://mariadb.org)/[MySQL](https://mysql.com)
 
-- [PhpMyAdmin](https://github.com/phpmyadmin/phpmyadmin)
+- [PhpMyAdmin](https://phpmyadmin.net)
 
 # FAQ
 
