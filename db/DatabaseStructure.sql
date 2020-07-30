@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : jeu. 30 juil. 2020 à 17:15
+-- Généré le : jeu. 30 juil. 2020 à 21:17
 -- Version du serveur :  8.0.20-0ubuntu0.20.04.1
 -- Version de PHP : 7.4.3
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `fireverse_db`
+-- Base de données : `mysite`
 --
 
 -- --------------------------------------------------------
@@ -29,8 +29,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `posts` (
   `id` int NOT NULL,
-  `author` varchar(255) COLLATE utf8_bin NOT NULL,
-  `content` varchar(255) COLLATE utf8_bin NOT NULL,
+  `author` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `content` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
@@ -42,9 +42,8 @@ CREATE TABLE `posts` (
 
 CREATE TABLE `users` (
   `id` int NOT NULL,
-  `pseudo` varchar(255) COLLATE utf8_bin NOT NULL,
-  `email` varchar(255) COLLATE utf8_bin NOT NULL,
-  `password` varchar(255) COLLATE utf8_bin NOT NULL,
+  `pseudo` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `password` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
@@ -63,8 +62,7 @@ ALTER TABLE `posts`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `pseudo` (`pseudo`),
-  ADD UNIQUE KEY `email` (`email`);
+  ADD UNIQUE KEY `pseudo` (`pseudo`);
 
 --
 -- AUTO_INCREMENT pour les tables déchargées
@@ -74,13 +72,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT pour la table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
