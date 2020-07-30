@@ -3,7 +3,7 @@ In-developpment social network.
 
 Writted with PHP & CSS & MariaDB
 
-# Requied Packages
+# Required Packages
 - [An Apache2 server](https://httpd.apache.org)
 
 - [PHP, the last version](https://php.net)
