@@ -14,8 +14,5 @@ For now indisponible.
 
 - [PhpMyAdmin](https://phpmyadmin.net)
 
-# FAQ
-
-Q:Date of the first version ?
-
-R:August 2020.
+# How to install
+Coming soon !
