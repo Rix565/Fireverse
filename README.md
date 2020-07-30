@@ -8,11 +8,11 @@ For now indisponible.
 # Requied Packages
 - An Apache2 server
 
-- PHP, the last version
+- [PHP, the last version](https://php.net)
 
 - MariaDB/MySQL
 
-- PhpMyAdmin
+- [PhpMyAdmin](https://github.com/phpmyadmin/phpmyadmin)
 
 # FAQ
 
