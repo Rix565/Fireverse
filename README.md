@@ -14,3 +14,6 @@ Writted with PHP & CSS & MariaDB
 
 # How to install
 Coming soon !
+
+#Screenshots
+https://i.imgur.com/3wi2464.png
