@@ -13,7 +13,10 @@ Writted with PHP & CSS & MariaDB
 - [PhpMyAdmin](https://phpmyadmin.net)
 
 # How to install
-Coming soon !
+- Copy the files in the fireverse-php folder to the directory where you run the webpage.
+- Create a new Database called "fireverse_db"
+- Import db/DatabaseStructure.sql to that database.
+- And enjoy !
 
 # Screenshots
 ![](https://i.imgur.com/3wi2464.png)
