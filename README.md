@@ -6,10 +6,15 @@ Writted with PHP & CSS & MariaDB
 For now indisponible.
 
 # Requied Packages
--An Apache2 server
+- An Apache2 server
 
--PHP, the last version
+- PHP, the last version
 
--MariaDB/MySQL
+- MariaDB/MySQL
 
--PhpMyAdmin
+- PhpMyAdmin
+
+# FAQ
+
+Q:Date of the first version ?
+R:August 2020.
