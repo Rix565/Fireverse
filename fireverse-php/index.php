@@ -25,7 +25,7 @@
             echo '<div id="container"><form method=post><input type="text" name="contentpost" placeholder="Content of post" required /><button type="submit" name="submitpost">Post</button></form></div>';
             if(isset($_POST['submitpost'])){
                 if(!empty($_POST['contentpost'])){
-                    $query_post = $db->query("INSERT INTO `posts`(`author`, `content`) VALUES (':nickname', ':contentpost')");
+                    $query_post = $db->prepare("INSERT INTO `posts`(`author`, `content`) VALUES (':nickname', ':contentpost')");
                     $query_post->bindValue("nickname", $_SESSION['nickname']);
                     $query_post->bindValue("contentpost", $_POST['contentpost']);
                     $query_post->execute();

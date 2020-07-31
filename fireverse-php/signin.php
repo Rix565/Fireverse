@@ -16,7 +16,7 @@
 	    </form>
 	    <?php
 	        if(isset($_POST['formsend'])){
-				$q = $db->query("SELECT * FROM `users` WHERE `pseudo` = :username");
+				$q = $db->prepare("SELECT * FROM `users` WHERE `pseudo` = :username");
 				$q->bindValue("username", $_SESSION['username']);
 				$q->execute();
 	        	$result = $q->fetch(PDO::FETCH_ASSOC);
