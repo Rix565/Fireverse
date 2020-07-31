@@ -27,6 +27,8 @@
                 if(!empty($_POST['contentpost'])){
                     $post = $db->query("INSERT INTO `posts`(`author`, `content`) VALUES ('".$_SESSION['nickname']. "', '" .$_POST['contentpost']. "')")
                     header('Location: index.php');
+                }else{
+                    echo "<p class='error'>The content of the post is empty !</p>"
                 }
             }
         }
