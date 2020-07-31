@@ -11,7 +11,7 @@ try {
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
     echo "<p class='error'>An error has occured for the db's connection.Please contact the manager with this error:</p>";
-    echo "<p class='error'>{$e}</p>";
+    echo "<p class='error'>{$e->getMessage()}</p>";
     exit;
 }
 
