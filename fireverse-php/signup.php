@@ -1,5 +1,5 @@
 <?php
-    include "connect.php";
+    include "./library/db.php";
     GLOBAL $db;
 ?>
 <!DOCTYPE html>
@@ -23,9 +23,12 @@
 	        if(isset($_POST['formsend'])){
 	        	if(!empty($_POST['username']) && !empty($_POST['cpassword']) && !empty($_POST['password'])){
 	        		if($_POST['password'] == $_POST['cpassword']){
-	        			$q = $db->query('INSERT INTO `users`(`pseudo`, `password`) VALUES ("' .$_POST['username']. '", "' .$_POST['password']. '")');
+                                    $query = $db->prepare('INSERT INTO `users`(`pseudo`, `password`) VALUES (":username", ":password")');
+                                    $query->bindValue("username", $_POST['username']);
+                                    $query->bindValue("password", $_POST['password']);
+                                    $query->execute();
 	        	        echo "<p class=success>Created account !</p>";
-	        	        $_SESSION['nickname'] = $_POST['username'];
+                                        $_SESSION['nickname'] = $_POST['username'];
 	        			$_SESSION['password'] = $_POST['password'];
 
 	        			header('Location: index.php');

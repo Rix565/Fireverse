@@ -1,6 +1,5 @@
 <?php
-    include "connect.php";
-    GLOBAL $db;
+    include "./library/db.php";
     GLOBAL $_SESSION;
 ?>
 <!DOCTYPE html>
@@ -17,8 +16,10 @@
 	    </form>
 	    <?php
 	        if(isset($_POST['formsend'])){
-	        	$q = $db->query("SELECT * FROM `users` WHERE `pseudo` = '" .$_POST['username']. "'");
-	        	$result = $q->fetch();
+				$q = $db->query("SELECT * FROM `users` WHERE `pseudo` = :username");
+				$q->bindValue("username", $_SESSION['username']);
+				$q->execute();
+	        	$result = $q->fetch(PDO::FETCH_ASSOC);
 	        	if($result==true){
 	        		if($_POST['password'] == $result['password']){
 	        			$_SESSION['nickname'] = $_POST['username'];
