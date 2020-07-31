@@ -24,8 +24,10 @@
         if(!empty($_SESSION['nickname']) && !empty($_SESSION['password'])){
             echo '<div id="container"><form method=post><input type="text" name="contentpost" placeholder="Content of post" required /><button type="submit" name="submitpost">Post</button></form></div>';
             if(isset($_POST['submitpost'])){
-                $post = $db->query("INSERT INTO `posts`(`author`, `content`) VALUES ('".$_SESSION['nickname']. "', '" .$_POST['contentpost']. "')");
-                header('Location: index.php');
+                if(!empty($_POST['contentpost'])){
+                    $post = $db->query("INSERT INTO `posts`(`author`, `content`) VALUES ('".$_SESSION['nickname']. "', '" .$_POST['contentpost']. "')")
+                    header('Location: index.php');
+                }
             }
         }
     ?>
