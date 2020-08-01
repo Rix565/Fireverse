@@ -25,3 +25,4 @@ Writted with PHP & CSS & MariaDB
 
 # Screenshots
 ![](https://i.imgur.com/3wi2464.png)
+![](https://i.imgur.com/MqglKyD.png)
