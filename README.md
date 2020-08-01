@@ -20,5 +20,8 @@ Writted with PHP & CSS & MariaDB
 - Import db/DatabaseStructure.sql to that database.
 - And enjoy !
 
+# Devlogs
+[1/08/20]Developping Communities system.Difficult to develop.
+
 # Screenshots
 ![](https://i.imgur.com/3wi2464.png)
