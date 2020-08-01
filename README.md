@@ -25,4 +25,20 @@ Writted with PHP & CSS & MariaDB
 
 # Screenshots
 ![](https://i.imgur.com/3wi2464.png)
+SPOILER V1.05
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ![](https://i.imgur.com/MqglKyD.png)
