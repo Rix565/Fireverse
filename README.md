@@ -3,6 +3,8 @@ In-developpment social network.
 
 Writted with PHP & CSS & MariaDB
 
+I am a beginner PHP, the code is not very readable.
+
 # Required Packages
 - [An Apache2 server](https://httpd.apache.org)
 
