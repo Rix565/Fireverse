@@ -29,6 +29,9 @@ I am a beginner PHP, the code is not very readable.
 ![](https://i.imgur.com/3wi2464.png)
 SPOILER V1.05
 
+# Important !!!
+Help me out here! I try to create a community system, but this one doesn’t work, when I try to send a post, it doesn’t work.If you want and can help me, go to the "help-me" branch of this GitHub project!
+
 
 
 
