@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : ven. 30 oct. 2020 à 13:31
+-- Généré le : ven. 30 oct. 2020 à 13:48
 -- Version du serveur :  8.0.22-0ubuntu0.20.10.2
 -- Version de PHP : 7.4.9
 
@@ -39,6 +39,7 @@ CREATE TABLE `likeprofiles` (
 
 CREATE TABLE `postsprofiles` (
   `profileid` int NOT NULL,
+  `author` varchar(255) COLLATE utf8_bin NOT NULL,
   `content` varchar(255) COLLATE utf8_bin NOT NULL,
   `postdate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `postid` int NOT NULL
